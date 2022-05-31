@@ -1,0 +1,46 @@
+{
+  "name": "react-native-slider-view",
+  "version": "0.0.0",
+  "description": "React Native Slider View implemented with react-native-pager-view, Reanimated and React Native Gesture Handler",
+	"main": "dist/cjs/index.js",
+	"module": "dist/esm/index.js",
+	"types": "dist/types/index.d.ts",
+  "scripts": {
+    "lint": "eslint src --ext .js,.ts",
+		"lintfix": "eslint --fix src --ext .js,.ts",
+		"build": "./scripts/build.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jleem99/react-native-slider-view.git"
+  },
+  "author": "JongHan Leem",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jleem99/react-native-slider-view/issues"
+  },
+  "homepage": "https://github.com/jleem99/react-native-slider-view#readme",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-native-pager-view": "^5.4.15",
+    "react-native-reanimated": "~2.8.0",
+    "react-native-gesture-handler": "~2.2.1"
+  },
+  "devDependencies": {
+    "@types/react": "~17.0.21",
+    "@types/react-native": "~0.67.6",
+    "eslint-config-jleem": "^1.3.0"
+  },
+	"files": [
+		"dist",
+		"LICENSE",
+		"README.md"
+	],
+	"exports": {
+		".": {
+			"import": "./dist/esm/index.js",
+			"require": "./dist/cjs/index.js"
+		}
+	}
+}
